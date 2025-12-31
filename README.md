@@ -43,10 +43,16 @@ The red cross ❌ represents the predicted goal point and the size of the yellow
 
 ## Results
 Planning results on the proposed **NAVSIM** **Navtest** and **NAVSIMv2 Navhard** benchmark. Please refer to the [paper](https://arxiv.org/pdf/2512.07130) for more details.
-<div align="center">
-    <img src="./assets/navhard.png" width="45%" style="margin-right: 10px; vertical-align: top;" />
-    <img src="./assets/navtest.png" width="45%" style="vertical-align: top;" />
-</div>
+<table align="center">
+  <tr>
+    <td valign="top">
+      <img src="./assets/navhard.png" width="100%" />
+    </td>
+    <td valign="top">
+      <img src="./assets/navtest.png" width="100%" />
+    </td>
+  </tr>
+</table>
 
 ## Contact
 If you have any questions or suggestions, please feel free to open an issue or contact us (xzebin@bupt.edu.cn).
