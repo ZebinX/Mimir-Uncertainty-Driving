@@ -1,0 +1,26 @@
+_target_: navsim.agents.mimir.mimir_agent_unc.MimirAgent
+_convert_: 'all'
+
+config:
+  _target_: navsim.agents.mimir.mimir_config_unc.MimirConfig
+  _convert_: 'all'
+
+  trajectory_sampling:
+    _target_: nuplan.planning.simulation.trajectory.trajectory_sampling.TrajectorySampling
+    _convert_: 'all'
+    time_horizon: 4
+    interval_length: 0.5
+
+  latent: False
+
+  training: False
+  use_proj_image: False
+  use_gt_goal_train: True
+  status_norm: False
+
+  navi_bank_path: ''
+
+  goal_coord_path: null
+  navi_unc_outputdir: null
+checkpoint_path: null
+lr: 6e-4
