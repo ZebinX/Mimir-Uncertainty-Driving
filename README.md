@@ -42,8 +42,8 @@ We provide essential model weights and intermediate files (e.g., navigation poin
 
 | Agent | Size | Link | Description |
 |:---|:---:|:---:|:---|
-| **mimir_unc** | 724MB | [Download](https://huggingface.co/XXXXing/Mimir-Uncertainty-Driving/tree/main) | Generates navigation points with uncertainty modeling |
-| **mimir** | 746MB | [Download](https://huggingface.co/XXXXing/Mimir-Uncertainty-Driving/tree/main) | Plans trajectories based on uncertain navigation information |
+| **mimir_unc** | 724MB | [Download](https://huggingface.co/XXXXing/Mimir-Uncertainty-Driving/blob/main/ckpts/mimir_unc_epoch99.ckpt) | Generates navigation points with uncertainty modeling |
+| **mimir** | 746MB | [Download](https://huggingface.co/XXXXing/Mimir-Uncertainty-Driving/blob/main/ckpts/mimir_epoch94.ckpt) | Plans trajectories based on uncertain navigation information |
 
 ### 📋 Data Preparation
 
