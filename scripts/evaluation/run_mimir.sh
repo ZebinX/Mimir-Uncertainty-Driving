@@ -9,11 +9,11 @@ TRAIN_TEST_SPLIT=navtest
 
 CHECKPOINT_PATH='/lpai/volumes/ad-e2e-vol-ga/zhengyupeng/workspace/socket/navsim_exp/ckpt/mimir_epoch94.ckpt'
 
-GOAL_COORD_PATH='/lpai/volumes/ad-e2e-vol-ga/zhengyupeng/workspace/socket/navsim_exp/1_goal_point_unc/navhard_plus_revise/navi.npy'
-UNC_PATH='/lpai/volumes/ad-e2e-vol-ga/zhengyupeng/workspace/socket/navsim_exp/1_goal_point_unc/navhard_plus_revise/unc.npy'
+GOAL_COORD_PATH='/lpai/volumes/ad-e2e-vol-ga/zhengyupeng/workspace/socket/navsim_exp/1_goal_point_unc/navtest_revise/navi.npy'
+UNC_PATH='/lpai/volumes/ad-e2e-vol-ga/zhengyupeng/workspace/socket/navsim_exp/1_goal_point_unc/navtest_revise/unc.npy'
 
 METRIC_CAHCE_PATH='/lpai/volumes/ad-e2e-vol-ga/zhengyupeng/metric_cache_navtest'
-TRAJ_SAVE_PATH='/lpai/volumes/ad-e2e-vol-ga/zhengyupeng/workspace/socket/navsim_exp/1_goal_point_unc/navhard_plus_revise/trajs'
+TRAJ_SAVE_PATH='/lpai/volumes/ad-e2e-vol-ga/zhengyupeng/workspace/socket/navsim_exp/1_goal_point_unc/navtest_plus_revise/trajs'
 
 python $NAVSIM_DEVKIT_ROOT/navsim/planning/script/run_pdm_score.py \
 agent=mimir_agent \

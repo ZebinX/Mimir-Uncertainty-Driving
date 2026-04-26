@@ -8,22 +8,22 @@ from cal_grad import grid_size,x_range,y_range
 
 
 def cal_9th_point(trajectory,time_step):
-    # 基于最后两点的速度和加速度进行推算
+    # Calculate based on velocity and acceleration of last two points
     x_last, y_last = trajectory[-1]
     x_second_last, y_second_last = trajectory[-2]
     x_third_last, y_third_last = trajectory[-3]
 
-    # 计算速度
+    # Calculate velocity
     vx_last = (x_last - x_second_last) / time_step
     vx_second_last = (x_second_last - x_third_last) / time_step
     vy_last = (y_last - y_second_last) / time_step
     vy_second_last = (y_second_last - y_third_last) / time_step
 
-    # 计算加速度
+    # Calculate acceleration
     ax = (vx_last - vx_second_last) / time_step
     ay = (vy_last - vy_second_last) / time_step
 
-    # 推算第 9 个点
+    # Predict the 9th point
     x_dir=vx_last * time_step + 0.5 * ax * time_step**2
     y_dir=vy_last * time_step + 0.5 * ay * time_step**2
     x_next = x_last + x_dir
@@ -120,13 +120,13 @@ for key in frame_mapping.keys():
         alpha=1.2
         beta=-0.2
     x_grad,y_grad,score_grid=cal_xy_grad(key)
-    # 找到轨迹点所在网格索引
+    # Find grid index where trajectory point is located
     x_idx = int((traj[-1,0] - x_range[0]) / (x_range[1] - x_range[0]) * grid_size)
     y_idx = int((traj[-1,1] - y_range[0]) / (y_range[1] - y_range[0]) * grid_size)
 
-    # 根据梯度场，获取力的方向
+    # Based on gradient field, get force direction
     grad_dir = np.array([x_grad[y_idx, x_idx], y_grad[y_idx, x_idx]])
-    grad_dir = grad_dir / (np.linalg.norm(grad_dir) + 1e-6)  # 归一化方向
+    grad_dir = grad_dir / (np.linalg.norm(grad_dir) + 1e-6)  # Normalize direction
     x_last, y_last = traj[-1,:2]
     x_second_last, y_second_last = traj[-2,:2]
     last_dir=np.array([x_last-x_second_last,y_last-y_second_last])

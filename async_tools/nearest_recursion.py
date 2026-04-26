@@ -26,32 +26,32 @@ def cal_nearest(navi,token):
 
     valid_points = coord_score[coord_score[:, 2] > 0.5]
 
-    # 2) 计算与 navi 的欧几里得距离
+    # 2) Calculate Euclidean distance to navi
     distances = np.sqrt((valid_points[:, 0] - navi[0])**2 + (valid_points[:, 1] - navi[1])**2)
 
-    # 3) 找到距离最小的那个点（argmin 获得索引）
+    # 3) Find the point with minimum distance (argmin gets index)
     nearest_index = np.argmin(distances)
 
     return valid_points[nearest_index][:2]
 
 
 def cal_9th_point(trajectory,time_step):
-    # 基于最后两点的速度和加速度进行推算
+    # Calculate based on velocity and acceleration of last two points
     x_last, y_last = trajectory[-1]
     x_second_last, y_second_last = trajectory[-2]
     x_third_last, y_third_last = trajectory[-3]
 
-    # 计算速度
+    # Calculate velocity
     vx_last = (x_last - x_second_last) / time_step
     vx_second_last = (x_second_last - x_third_last) / time_step
     vy_last = (y_last - y_second_last) / time_step
     vy_second_last = (y_second_last - y_third_last) / time_step
 
-    # 计算加速度
+    # Calculate acceleration
     ax = (vx_last - vx_second_last) / time_step
     ay = (vy_last - vy_second_last) / time_step
 
-    # 推算第 9 个点
+    # Predict the 9th point
     x_dir=vx_last * time_step + 0.5 * ax * time_step**2
     y_dir=vy_last * time_step + 0.5 * ay * time_step**2
     x_next = x_last + x_dir
