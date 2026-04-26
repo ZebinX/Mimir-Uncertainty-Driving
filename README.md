@@ -49,7 +49,7 @@ We provide essential model weights and intermediate files (e.g., navigation poin
 
 Before proceeding, please complete the following prerequisites:
 
-1. **Download NAVSIM Dataset** - Follow the official NAVSIM data download instructions
+1. **Download NAVSIM Dataset** - Follow the [NAVSIM installation guide](https://github.com/autonomousvision/navsim/blob/main/docs/install.md) to download the [OpenScene dataset](https://huggingface.co/datasets/OpenDriveLab/OpenScene) and nuPlan maps
 2. **Generate Metric Cache** - Create evaluation cache containing necessary metrics
 3. **Generate Feature Cache** - Prepare training features for model training
 
