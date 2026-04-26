@@ -2,7 +2,7 @@
 
 > [**Mimir: Hierarchical Goal-Driven Diffusion with Uncertainty
 Propagation for End-to-End Autonomous Driving**](https://arxiv.org/pdf/2512.07130)  <br>
-> [Zebin Xing]()<sup>1*</sup>, [Yupeng Zheng]()<sup>1</sup>, [Qichao Zhang]()<sup>1</sup>, [Zhixing Ding]()<sup>1,2</sup>, [Pengxuan Yang]()<sup>1</sup>, [Songen Gu]()<sup>3</sup>, [Zhongpu Xia]()<sup>1</sup>, [Dongbin Zhao]()<sup>1</sup>  <br>
+> [Zebin Xing](https://zebinx.github.io/)<sup>1*</sup>, [Yupeng Zheng](https://scholar.google.com/citations?user=anGhGdYAAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>, [Qichao Zhang](https://scholar.google.com/citations?user=snkECPAAAAAJ&hl=zh-CN)<sup>1</sup>, [Zhixing Ding]()<sup>1,2</sup>, [Pengxuan Yang](https://scholar.google.com/citations?user=cJFknzUAAAAJ&hl=zh-CNß)<sup>1</sup>, [Songen Gu](https://scholar.google.com/citations?user=W-msX90AAAAJ&hl=zh-CN)<sup>3</sup>, [Zhongpu Xia]()<sup>1</sup>, [Dongbin Zhao](https://scholar.google.com/citations?user=RxvYlNQAAAAJ&hl=zh-CN)<sup>1</sup>  <br>
 > <sup>1</sup> Institue of Automation, Chinese Academy of Sciences, <sup>2</sup> China University of Geosciences, <sup>3</sup> Fudan University  <br>
 > <br>
 > IEEE Robotics and Automation Letters (RAL), 2025 <br>
@@ -126,8 +126,8 @@ If you have any questions or suggestions, please feel free to open an issue or c
 Mimir is greatly inspired by the following outstanding contributions to the open-source community:
 
 - 🌊 **[GoalFlow](https://github.com/)** - Goal point generation and flow-based prediction
-- 🚗 **[DiffusionDrive](https://github.com/)** - Diffusion-based trajectory planning framework
-- 🗺️ **[NAVSIM](https://github.com/)** - Navigation simulation platform and benchmark
+- 🚗 **[DiffusionDrive](https://github.com/hustvl/DiffusionDrive)** - Diffusion-based trajectory planning framework
+- 🗺️ **[NAVSIM](https://github.com/autonomousvision/navsim)** - Simulation platform and benchmark
 
 We sincerely thank all contributors for their valuable work that helped shape this research.
 
@@ -139,14 +139,13 @@ If you find Mimir useful, please consider giving us a star &#127775; and citing 
 @ARTICLE{11282450,
   author={Xing, Zebin and Zheng, Yupeng and Zhang, Qichao and Ding, Zhixing and Yang, Pengxuan and Gu, Songen and Xia, Zhongpu and Zhao, Dongbin},
   journal={IEEE Robotics and Automation Letters}, 
-  title={Mimir: Hierarchical Goal-Driven Diffusion with Uncertainty Propagation for End-to-End Autonomous Driving}, 
-  year={2025},
-  volume={},
-  number={},
-  pages={1-8},
-  keywords={Uncertainty;Trajectory;Predictive models;Autonomous vehicles;Laser radar;Vocabulary;Planning;Feature extraction;Estimation;Artificial intelligence;Learning from Demonstration;Imitation Learning;Autonomous Vehicle Navigation},
+  title={Mimir: Hierarchical Goal-Driven Diffusion With Uncertainty Propagation for End-to-End Autonomous Driving}, 
+  year={2026},
+  volume={11},
+  number={2},
+  pages={2178-2185},
+  keywords={Uncertainty;Trajectory;Predictive models;Autonomous vehicles;Laser radar;Vocabulary;Planning;Feature extraction;Estimation;Artificial intelligence;Learning from demonstration;imitation learning;autonomous vehicle navigation},
   doi={10.1109/LRA.2025.3641129}}
-
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
